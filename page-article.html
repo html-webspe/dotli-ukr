@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Статья блога</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220830200001">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://www.google.com/recaptcha/api.js?_v=20220830200001" async defer></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="visually-hidden">
+			<svg viewBox="0 0 24 24" fill="none">
+
+				<symbol id="crumbs" viewBox="0 0 24 24" fill="none">
+					<path d="M15.5997 19.2L9.49713 13.4563C8.6581 12.6667 8.6581 11.3332 9.49713 10.5435L15.5997 4.79995" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+				</symbol>
+
+
+				<symbol id="burger">
+					<path d="M17.9564 6.981C17.7734 6.798 17.4766 6.798 17.2935 6.981L16.356 7.9185C16.1729 8.10155 16.1729 8.39837 16.356 8.58146C16.5391 8.76455 16.8359 8.76451 17.0189 8.58146L17.9564 7.64396C18.1395 7.46091 18.1395 7.16409 17.9564 6.981Z" fill="black" />
+					<path d="M6.70643 6.981C6.52339 6.798 6.22657 6.798 6.04348 6.981L5.10597 7.9185C4.92293 8.10155 4.92293 8.39837 5.10597 8.58146C5.28912 8.76455 5.58588 8.76451 5.76893 8.58146L6.70643 7.64396C6.88948 7.46091 6.88948 7.16409 6.70643 6.981Z" fill="black" />
+					<path d="M15.6127 5.106C15.4296 4.923 15.1328 4.923 14.9497 5.106L14.0122 6.0435C13.8292 6.22655 13.8292 6.52336 14.0122 6.70645C14.1954 6.88955 14.4921 6.8895 14.6752 6.70645L15.6127 5.76895C15.7957 5.58591 15.7957 5.28909 15.6127 5.106Z" fill="black" />
+					<path d="M9.98768 5.106C9.80463 4.923 9.50782 4.923 9.32472 5.106L8.38722 6.0435C8.20418 6.22655 8.20418 6.52336 8.38722 6.70645C8.57036 6.88955 8.86713 6.8895 9.05018 6.70645L9.98768 5.76895C10.1707 5.58591 10.1707 5.28909 9.98768 5.106Z" fill="black" />
+					<path d="M12.3314 6.981C12.1484 6.798 11.8516 6.798 11.6685 6.981L10.731 7.9185C10.5479 8.10155 10.5479 8.39837 10.731 8.58146C10.9141 8.76455 11.2109 8.76451 11.3939 8.58146L12.3314 7.64396C12.5145 7.46091 12.5145 7.16409 12.3314 6.981Z" fill="black" />
+					<path d="M24 16.6875C24 15.9121 23.3692 15.2812 22.5938 15.2812H22.125V13.7705C22.1443 13.7537 22.164 13.7376 22.183 13.7203C22.4872 13.443 23.1228 13.2656 23.5372 13.2604C23.796 13.2571 24.0032 13.0446 24 12.7858C23.9967 12.5289 23.7875 12.3229 23.5313 12.3229C23.5294 12.3229 23.5273 12.3229 23.5253 12.323C23.1231 12.328 22.5887 12.4348 22.125 12.654V11.4253C22.6957 11.1917 23.0752 10.6041 22.9937 9.9518C22.4408 5.50762 18.6415 2.15625 14.1562 2.15625H9.84375C5.35847 2.15625 1.5592 5.50762 1.00627 9.95161C0.925031 10.602 1.30191 11.1908 1.875 11.4254V12.6334C1.40958 12.4225 0.873891 12.3171 0.462609 12.323C0.203766 12.3263 -0.00332812 12.539 4.6875e-05 12.7979C0.00342187 13.0546 0.212625 13.2604 0.468656 13.2604C0.470719 13.2604 0.472828 13.2604 0.474937 13.2604C0.894094 13.254 1.54472 13.4291 1.86206 13.7185C1.86628 13.7224 1.87078 13.7261 1.87505 13.7299V15.2812H1.40625C0.629344 15.2812 0 15.9105 0 16.6875C0 17.3843 0.509531 17.964 1.17553 18.0745C1.06598 18.3637 1.05811 18.6796 1.15969 18.9798C1.74066 20.6928 3.34673 21.8438 5.15625 21.8438H18.8438C20.6533 21.8438 22.2593 20.6928 22.8405 18.9795C22.9419 18.6796 22.9341 18.3638 22.8246 18.0747C23.478 17.9672 24 17.3986 24 16.6875ZM1.93655 10.0675C2.43127 6.09183 5.83059 3.09375 9.84375 3.09375H14.1562C18.1694 3.09375 21.5687 6.09183 22.0635 10.0678C22.0973 10.3387 21.8859 10.5745 21.6249 10.592C21.6218 10.5922 21.6187 10.5925 21.6156 10.5928C21.6076 10.5935 21.5996 10.5938 21.5916 10.5938H2.40844C2.13234 10.5938 1.90125 10.3507 1.93655 10.0675ZM19.3705 13.0275C18.3405 12.0882 16.9564 12.0882 15.9263 13.0275C15.2537 13.6408 14.4181 13.6408 13.7455 13.0275C12.7155 12.0882 11.3314 12.0882 10.3013 13.0275C9.62869 13.6408 8.79309 13.6408 8.12053 13.0275C7.09045 12.0882 5.70638 12.0881 4.6762 13.0276C4.10616 13.5478 3.42323 13.6304 2.8125 13.2645V11.5312H21.1875V13.2916C20.5894 13.6244 19.9241 13.5323 19.3705 13.0275ZM21.1875 14.3083V15.2812H2.8125V14.2942C3.06595 14.3819 3.32606 14.4258 3.58594 14.4257C4.19086 14.4257 4.79419 14.1891 5.30808 13.7202C5.98064 13.1069 6.81628 13.1069 7.48884 13.7202C8.51892 14.6596 9.90305 14.6596 10.9331 13.7202C11.6057 13.1069 12.4413 13.1069 13.1138 13.7202C14.1439 14.6596 15.528 14.6596 16.5581 13.7202C17.2306 13.1069 18.0663 13.107 18.7388 13.7202C19.4559 14.3742 20.3562 14.5752 21.1875 14.3083ZM21.9525 18.6787C21.5006 20.011 20.2513 20.9062 18.8438 20.9062H5.15625C3.74869 20.9062 2.49937 20.011 2.04764 18.679C1.95037 18.3916 2.19848 18.0938 2.50594 18.0938H21.4941C21.8026 18.0938 22.0492 18.393 21.9525 18.6787ZM22.5938 17.1562H1.40625C1.14778 17.1562 0.9375 16.946 0.9375 16.6875C0.9375 16.4287 1.14745 16.2188 1.40625 16.2188H22.5938C22.8522 16.2188 23.0625 16.429 23.0625 16.6875C23.0625 16.9463 22.8525 17.1562 22.5938 17.1562Z" fill="black" />
+				</symbol>
+
+				<symbol id="arrow-right" viewBox="0 0 41 18" fill="none">
+					<line x1="1" y1="9.5" x2="32" y2="9.5" stroke="black" stroke-linecap="round" />
+					<path d="M32.5 17L39.4526 10.4564C40.2916 9.66673 40.2916 8.33327 39.4526 7.5436L32.5 1" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+				</symbol>
+
+				<symbol id="arrow-left" viewBox="0 0 41 18" fill="none">
+					<line x1="0.5" y1="-0.5" x2="31.5" y2="-0.5" transform="matrix(-1 0 0 1 40.5 10)" stroke="black" stroke-linecap="round" />
+					<path d="M8.5 17L1.54743 10.4564C0.708398 9.66673 0.708397 8.33327 1.54742 7.5436L8.5 1" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+				</symbol>
+				<symbol id="single-icon" viewBox="0 0 354 229" fill="none">
+					<path d="M91.6206 189.033V188.533H91.1206H82.2759C74.7152 188.533 69.4823 186.381 66.4243 182.198C63.3294 177.964 61.7398 171.39 61.7398 162.388V142.283C61.7398 134.779 60.0487 128.459 56.6355 123.354C53.3102 118.38 49.1152 115.029 44.0503 113.337V107.281C49.1152 105.588 53.3102 102.238 56.6355 97.2642C60.0487 92.1584 61.7398 85.8387 61.7398 78.3346L61.7398 58.2296C61.7398 49.2276 63.3294 42.6535 66.4243 38.4196C69.4823 34.2364 74.7152 32.0843 82.2759 32.0843H91.1206H91.6206V31.5843V1.30566V0.805664H91.1206L75.1045 0.805664C59.7043 0.805664 47.6096 5.27933 38.8884 14.2804C30.1798 23.2683 25.8389 34.8648 25.8389 49.0249V71.31C25.8389 78.9271 24.3136 84.5475 21.3468 88.2565C18.3972 91.9441 13.9575 93.8217 7.93235 93.8217H1H0.5V94.3217L0.5 126.296V126.796H1H7.93235C13.9575 126.796 18.3972 128.674 21.3468 132.361C24.3136 136.07 25.8389 141.691 25.8389 149.308L25.8389 171.593C25.8389 185.753 30.1798 197.349 38.8884 206.337C47.6096 215.338 59.7043 219.812 75.1045 219.812H91.1206H91.6206V219.312V189.033ZM237.491 62.5604C236.528 46.1447 230.827 33.568 220.339 24.9021C209.871 16.0905 196.202 11.706 179.381 11.706C161.615 11.706 147.467 15.9234 136.994 24.4135C126.681 32.7411 121.51 43.3788 121.51 56.2917C121.51 68.4036 125.149 77.4811 132.506 83.4195V89.6048C126.812 91.5983 121.675 95.1656 117.095 100.286L117.095 100.286L117.09 100.293C112.532 105.571 110.275 112.478 110.275 120.967C110.275 131.731 113.498 140.347 119.985 146.757L119.99 146.761C126.447 152.977 135.857 157.691 148.176 160.933C148.177 160.934 148.177 160.934 148.178 160.934L178.773 169.169C183.837 170.532 187.58 172.302 190.049 174.453C192.502 176.589 193.702 179.101 193.702 182.009C193.702 186.075 192.284 189.059 189.49 191.048C186.664 193.06 182.365 194.105 176.513 194.105C169.97 194.105 164.98 192.607 161.474 189.679C157.975 186.757 155.885 182.351 155.257 176.385L155.209 175.938H154.759H116.99H116.46L116.491 176.467C117.453 192.883 123.155 205.538 133.638 214.364C144.107 223.339 157.777 227.806 174.6 227.806C192.364 227.806 206.433 223.589 216.748 215.098C227.218 206.772 232.471 196.135 232.471 183.22C232.471 171.108 228.832 162.031 221.475 156.092V149.907C227.172 147.908 232.231 144.256 236.655 138.974C241.365 133.541 243.707 126.719 243.707 118.545C243.707 107.623 240.486 99.0038 233.994 92.7529C227.537 86.3741 218.126 81.6601 205.808 78.5789C203.083 77.7673 198.056 76.474 190.739 74.7009C183.411 72.7638 178.244 71.3137 175.231 70.3492L175.221 70.3463C169.828 68.7389 166.002 66.9872 163.688 65.1143C161.412 63.1126 160.279 60.5879 160.279 57.5029C160.279 53.4363 161.698 50.4527 164.492 48.4632C167.317 46.4515 171.616 45.4069 177.469 45.4069C184.096 45.4069 189.127 46.8666 192.632 49.7156C196.127 52.557 198.176 56.8384 198.724 62.6368L198.767 63.0897H199.222H236.991H237.522L237.491 62.5604ZM176.413 133.083L176.413 133.083L176.4 133.079C171.47 131.79 166.539 130.339 161.608 128.728L161.601 128.725L161.594 128.723C157.266 127.447 154.072 125.628 151.963 123.296C149.862 120.974 148.805 118.11 148.805 114.669C148.805 111.115 149.642 108.216 151.281 105.938C152.894 103.695 155.316 102.01 158.588 100.903C161.684 101.888 168.014 103.731 177.569 106.429C177.57 106.429 177.571 106.43 177.572 106.43L192.387 110.788C196.715 112.064 199.909 113.884 202.019 116.216C204.119 118.538 205.176 121.402 205.176 124.843C205.176 127.799 204.257 130.608 202.397 133.277L202.394 133.282C200.733 135.73 198.403 137.506 195.381 138.609L176.413 133.083ZM262.379 31.5843V32.0843H262.879H271.724C279.285 32.0843 284.518 34.2364 287.576 38.4196C290.671 42.6535 292.26 49.2276 292.26 58.2296V78.3346C292.26 85.8387 293.951 92.1584 297.365 97.2642C300.69 102.238 304.885 105.588 309.95 107.281V113.337C304.885 115.029 300.69 118.38 297.365 123.354C293.951 128.459 292.26 134.779 292.26 142.283V162.388C292.26 171.39 290.671 177.964 287.576 182.198C284.518 186.381 279.285 188.533 271.724 188.533H262.879H262.379V189.033V219.312V219.812H262.879H278.896C294.296 219.812 306.39 215.338 315.112 206.337C323.82 197.349 328.161 185.753 328.161 171.593V149.308C328.161 141.691 329.686 136.07 332.653 132.361C335.603 128.674 340.042 126.796 346.068 126.796H353H353.5V126.296V94.3217V93.8217H353H346.068C340.042 93.8217 335.603 91.9441 332.653 88.2565C329.686 84.5475 328.161 78.9271 328.161 71.31V49.0249C328.161 34.8648 323.82 23.2683 315.112 14.2804C306.39 5.27933 294.296 0.805664 278.896 0.805664L262.879 0.805664H262.379V1.30566V31.5843Z" stroke="#00FA9A"></path>
+				</symbol>
+
+			</svg>
+
+		</div>
+
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+
+					<a href="/" class="brand header__brand"></a>
+
+					<div class="header__catalog catalog">
+						<button type="button" class="catalog__button ctg-btn-js">
+							<span>Каталог курсів</span>
+							<i class="catalog__icon icon-catalog"></i>
+						</button>
+						<nav class="catalog__body">
+							<ul class="catalog__list">
+								<li class="catalog__item">
+									<div class="catalog__item-catagory">Розробка</div>
+									<ul class="catalog__item-list">
+										<li><a href="">Data science & Machine learning</a></li>
+										<li><a href="">Java – розробник</a></li>
+										<li><a href="">Тестувальник ПЗ (QA/QC)</a></li>
+									</ul>
+								</li>
+								<li class="catalog__item">
+									<div class="catalog__item-catagory">Дизайн</div>
+									<ul class="catalog__item-list">
+										<li><a href="">UI/UX дизайнер</a></li>
+										<li><a href="">Графічний дизайнер</a></li>
+									</ul>
+								</li>
+								<li class="catalog__item">
+									<div class="catalog__item-catagory">Дизайн</div>
+									<ul class="catalog__item-list">
+										<li><a href="">UI/UX дизайнер</a></li>
+										<li><a href="">Графічний дизайнер</a></li>
+									</ul>
+								</li>
+								</li>
+							</ul>
+							<div class="catalog__action">
+								<svg class="catalog__action-icon" aria-hidden="true">
+									<use xlink:href="#single-icon-bold"></use>
+								</svg>
+								<h2 class="catalog__action-text">Почати просто. <br>
+									Спробуй тестовий безкоштовний 3&nbsp;-&nbsp;денний період
+								</h2>
+								<button type="button" data-popup=".popup-form" class="catalog__action-button button">
+									<svg aria-hidden="true">
+										<use xlink:href="#arrow-right"></use>
+									</svg>
+									<span>Обрати професію</span>
+									<svg aria-hidden="true">
+										<use xlink:href="#arrow-left"></use>
+									</svg>
+								</button>
+							</div>
+						</nav>
+					</div>
+
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item menu__item-sub"><span>Про нас</span>
+									<svg aria-hidden="true">
+										<use xlink:href="#arrow-down"></use>
+									</svg>
+									<ul class="menu__sub">
+										<li class="menu__sub-item"><a href="" class="menu__sub-link">Наші спікери</a></li>
+										<li class="menu__sub-item"><a href="" class="menu__sub-link">Про компанію</a></li>
+										<li class="menu__sub-item"><a href="" class="menu__sub-link">Про курси</a></li>
+									</ul>
+								</li>
+								<li class="menu__item"><a href="" class="menu__link">Працевлаштування</a></li>
+								<li class="menu__item"><a href="" class="menu__link">Контакти</a></li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+			</div>
+		</header>
+		<ul class="crumbs__list">
+			<li class="crumbs__list-item">
+				<svg width="24" height="24" aria-hidden="true">
+					<use xlink:href="#crumbs"></use>
+				</svg>
+				Назад
+			</li>
+			<li class="crumbs__list-item">
+				<a href="">Главная</a>
+			</li>
+			<li class="crumbs__list-item">
+				<a href="">Блог</a>
+			</li>
+			<li class="crumbs__list-item">
+				<a href="">Старикам тут не место? Как онлайн - образование образованиеобразование</a>
+			</li>
+		</ul>
+
+		<main class="main main-article">
+			<section class="article">
+				<div class="article__container">
+					<div class="article__body">
+						<article class="article__main">
+							<h1 class="article__title">Старикам тут не место? Как онлайн - образование меняет жизнь пенсионеров США
+							</h1>
+
+							<p>
+								Отсутствие высшего образования — не приговор для начала карьеры. Главное — освоить необходимые
+								навыки и сразу применять их на практике. Это возможно не только в университете, но и на
+								профессиональных курсах.
+							</p>
+							<p>
+								Такое обучение может стать альтернативой высшему образованию, если по каким-то причинам у вас его
+								нет. Позже, получив опыт работы, вы сможете более осознанно подойти к выбору вуза и специальности
+								для получения фундаментального образования.
+							</p>
+
+							<picture><source srcset="img/article/01.webp" type="image/webp"><img src="img/article/01.jpg" alt=""></picture>
+
+							<p>
+								Отсутствие высшего образования — не приговор для начала карьеры. Главное — освоить необходимые
+								навыки и
+								сразу применять их на практике. Это возможно не только в университете, но и на профессиональных
+								курсах.
+							</p>
+
+							<p>
+								Такое обучение может стать альтернативой высшему образованию, если по каким-то причинам у вас его
+								нет.
+								Позже, получив опыт работы, вы сможете более осознанно подойти к выбору вуза и специальности для
+								получения фундаментального образования.
+							</p>
+
+							<div data-sticky data-sticky-top="50" data-da=".article__body,992,last" class="article__sticky">
+								<div data-sticky-item class="article__sticky-block">
+									<p class="article__sticky-text">Почати просто.
+										Спробуй тестовий безкоштовний
+										7-денний період</p>
+
+									<button type="button" class="button">
+										<svg aria-hidden="true">
+											<use xlink:href="#arrow-right"></use>
+										</svg>
+										<span>Отправить</span>
+										<svg aria-hidden="true">
+											<use xlink:href="#arrow-left"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+
+							<picture><source srcset="img/article/01.webp" type="image/webp"><img src="img/article/01.jpg" alt=""></picture>
+
+							<ol>
+								<li>базові поняття</li>
+								<li>класи</li>
+								<li>інтерфейси</li>
+								<li>поля, методи та доступи</li>
+								<li>анотації</li>
+								<li>керування пам'яттю</li>
+							</ol>
+
+						</article>
+					</div>
+
+					<div class="article__social">
+						<span>Поделиться: </span>
+						<ul class="article__social-list">
+							<li>
+								<a href="" class="article__social-link">
+									<img src="img/social/fb.svg" alt="Фейсбук">
+								</a>
+							</li>
+							<li>
+								<a href="" class="article__social-link">
+									<img src="img/social/inst.svg" alt="Інстограм">
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</section>
+			<section class="blog">
+				<div class="blog__container">
+					<h2 class="section__title blog__title">Блог</h2>
+
+					<div class="blog__body">
+
+						<article class="blog__article article-preview">
+							<div class="article-preview__img">
+								<picture><source srcset="img/article/01.webp" type="image/webp"><img src="img/article/01.jpg" alt="article-img"></picture>
+							</div>
+							<div class="article-preview__content">
+								<div class="article-preview__group">
+									<span>#Статья</span>
+									<time class="article-preview__date">24 ноября 2021</time>
+								</div>
+								<div class="article-preview__group">
+									<h4 class="article-preview__title">ТОП 5 книг для програмування від спікера курсу
+										&#8220;Java-розробник&#8221; &#8211; Сергія Вороніна </h4>
+								</div>
+								<div class="article-preview__group">
+									<p class="article-preview__text">
+										У цій статті ми зібрали ТОП 5 книг для програмування від спікера
+									</p>
+								</div>
+
+							</div>
+							<span class="article-preview__category">Java-розробник</span>
+						</article>
+
+						<article class="blog__article article-preview">
+							<div class="article-preview__img">
+								<picture><source srcset="img/article/01.webp" type="image/webp"><img src="img/article/01.jpg" alt="article-img"></picture>
+							</div>
+							<div class="article-preview__content">
+								<div class="article-preview__group">
+									<span>#Статья</span>
+									<time class="article-preview__date">24 ноября 2021</time>
+								</div>
+								<div class="article-preview__group">
+									<h4 class="article-preview__title">ТОП 5 книг для програмування від спікера курсу
+										&#8220;Java-розробник&#8221; &#8211; Сергія Вороніна </h4>
+								</div>
+								<div class="article-preview__group">
+									<p class="article-preview__text">
+										У цій статті ми зібрали ТОП 5 книг для програмування від спікера
+									</p>
+								</div>
+
+							</div>
+							<span class="article-preview__category">Java-розробник</span>
+						</article>
+
+						<article class="blog__article article-preview">
+							<div class="article-preview__img">
+								<picture><source srcset="img/article/01.webp" type="image/webp"><img src="img/article/01.jpg" alt="article-img"></picture>
+							</div>
+							<div class="article-preview__content">
+								<div class="article-preview__group">
+									<span>#Статья</span>
+									<time class="article-preview__date">24 ноября 2021</time>
+								</div>
+								<div class="article-preview__group">
+									<h4 class="article-preview__title">ТОП 5 книг для програмування від спікера курсу
+										&#8220;Java-розробник&#8221; &#8211; Сергія Вороніна </h4>
+								</div>
+								<div class="article-preview__group">
+									<p class="article-preview__text">
+										У цій статті ми зібрали ТОП 5 книг для програмування від спікера
+									</p>
+								</div>
+
+							</div>
+							<span class="article-preview__category">Java-розробник</span>
+						</article>
+
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="footer" class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<a href="/" class="footer__brand">Dotli</a>
+
+					<div class="footer__navigation">
+						<div class="footer__navigation-group">
+							<h3 class="footer__navigation-title">Навігація</h3>
+							<ul class="footer__navigation-list">
+								<li><a href="" class="footer__navigation-link">Головна</a></li>
+								<li><a href="" class="footer__navigation-link">Працевлаштування</a></li>
+								<li><a href="" class="footer__navigation-link">Контакти</a></li>
+							</ul>
+						</div>
+						<div class="footer__navigation-group">
+							<h3 class="footer__navigation-title">Про нас</h3>
+							<ul class="footer__navigation-list">
+								<li><a href="" class="footer__navigation-link">Наші спікери</a></li>
+								<li><a href="" class="footer__navigation-link">Про компанію</a></li>
+								<li><a href="" class="footer__navigation-link">Про курси</a></li>
+							</ul>
+						</div>
+						<div class="footer__navigation-group">
+							<h3 class="footer__navigation-title">Навчання</h3>
+							<ul class="footer__navigation-list">
+								<li><a href="" class="footer__navigation-link">Тестувальник ПЗ</a></li>
+								<li><a href="" class="footer__navigation-link">Java-розробник</a></li>
+								<li><a href="" class="footer__navigation-link">UI/UX дизайнер</a></li>
+								<li><a href="" class="footer__navigation-link">Графічний дизайнер</a></li>
+							</ul>
+						</div>
+						<div class="footer__navigation-group footer__navigation-group-tel">
+							<h3 class="footer__navigation-title">Консультація:</h3>
+							<ul class="footer__navigation-list">
+								<li><a href="tel:+380675396030" class="footer__navigation-link">+380 67 53 96 030</a></li>
+								<li><a href="tel:+380504130870" class="footer__navigation-link">+380 50 41 30 870</a></li>
+								<li><a href="tel:+380633116167" class="footer__navigation-link">+380 63 31 16 167</a></li>
+							</ul>
+						</div>
+
+						<div class="footer__navigation-group footer__navigation-group-mail">
+							<h3 class="footer__navigation-title">Співпраця:</h3>
+							<ul class="footer__navigation-list">
+								<li><a href="mail:info@dotli.com.ua" class="footer__navigation-link">info@dotli.com.ua</a></li>
+							</ul>
+						</div>
+						<div class="footer__navigation-group footer__navigation-group-social">
+							<div class="footer__social">
+								<a href="" class="footer__social-item">
+									<img src="img/social-icon/inst.svg" alt="Instragram">
+								</a>
+								<a href="" class="footer__social-item">
+									<img src="img/social-icon/fb.svg" alt="">
+								</a>
+								<a href="" class="footer__social-item">
+									<img src="img/social-icon/youtube.svg" alt="">
+								</a>
+								<a href="" class="footer__social-item">
+									<img src="img/social-icon/telegram.svg" alt="">
+								</a>
+								<a href="" class="footer__social-item">
+									<img src="img/social-icon/in.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="footer__document">
+					<a href="https://tommyuniver.com/qc/offerta.html" class="footer__document-link">Договір оферти</a>
+					<a href="https://tommyuniver.com/qc/offerta.html" class="footer__document-link">Політика
+						конфіденційності</a>
+				</div>
+			</div>
+
+		</footer>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12?_v=20220830200001"></script>
+	<script src="js/app.min.js?_v=20220830200001"></script>
+</body>
+
+</html>
